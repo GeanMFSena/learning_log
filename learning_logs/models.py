@@ -13,7 +13,7 @@ class Topic(models.Model):
 class Entry(models.Model):
     """Algo especifico aprendido sobre um topico"""
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
-    test = models.TextField()
+    text = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
 
     class Meta():
